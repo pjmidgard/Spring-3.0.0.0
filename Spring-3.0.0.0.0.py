@@ -438,7 +438,7 @@ class compression:
                                             
                                          
                                     		
-                                    		sda18=bin(T7)[2:]
+                                    		sda18=bin(T7)[3:]
                                     		lenf=len(sda18)
                                     		szx=""
                                     		xc=8-lenf%8
@@ -514,7 +514,7 @@ class compression:
                                   
 
                                     
-                                    sda10=sda3
+                                    sda10="1"+sda3
                                     T3=0
                                     T4=0
                                     T5=0
