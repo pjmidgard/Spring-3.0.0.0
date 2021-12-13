@@ -1,6 +1,6 @@
 # Spring-3.0.0.0
 Spring-3.0.0.0
-Compression Spring-68
+Compression Spring-3.0.0.0
 
 @Author Jurijus Pacalovas
 
