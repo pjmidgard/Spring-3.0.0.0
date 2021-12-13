@@ -387,7 +387,7 @@ class compression:
                                     T3=1
                                    
                                     T5=0
-                                    T20=T12+10000
+                                    T20=T12+1000
                                     T21=0
                                     T12=0
                                     
@@ -426,30 +426,7 @@ class compression:
 	                                    	T21=T7
 	                                    	T7=T7+1
 	                                    		
-	                                    	
-	                                    
-	                                    	
-	                                    	
-	                                 
-	                              
-	                     
-                                   
-                                    
-                                  
-                                 
-                                    
-                                    
-  
-                                    
 
-                                   
-                                  
-                                    
-                                    	
-
-                        
-                                    
-     
                                          
                                     sda2=sda17
                                     Circle_times2=Circle_times2+1
@@ -637,7 +614,7 @@ class compression:
                                    
                                     T5=0
                                     T20=T12-1000
-                                    if T20:
+                                    if T20<=0:
                                     	  raise SystemExit
                                     T21=0
                                     T12=0
