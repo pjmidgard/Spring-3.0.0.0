@@ -387,7 +387,7 @@ class compression:
                                     T3=1
                                    
                                     T5=0
-                                    T20=T12+1000
+                                    T20=T12+100000
                                     T21=0
                                     T12=0
                                     
@@ -613,7 +613,7 @@ class compression:
                                     T3=1
                                    
                                     T5=0
-                                    T20=T12-1000
+                                    T20=T12-100000
                                     if T20<=0:
                                     	  raise SystemExit
                                     T21=0
