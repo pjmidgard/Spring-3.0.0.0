@@ -387,7 +387,7 @@ class compression:
                                     T3=1
                                    
                                     T5=0
-                                    T20=T12+100000
+                                    T20=T12+1000
                                     T21=0
                                     T12=0
                                     
@@ -438,7 +438,7 @@ class compression:
                                             
                                          
                                     		
-                                    		sda18=bin(T7)[3:]
+                                    		sda18=bin(T7)[2:]
                                     		lenf=len(sda18)
                                     		szx=""
                                     		xc=8-lenf%8
@@ -510,11 +510,13 @@ class compression:
                                     Spin=0
                                   
                              
-                                    
+                                    if sda3[0:8]=="00000000":
+                                    	raise SystemExit
+                                    	
                                   
 
                                     
-                                    sda10="1"+sda3
+                                    sda10=sda3
                                     T3=0
                                     T4=0
                                     T5=0
