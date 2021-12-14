@@ -379,7 +379,7 @@ class compression:
                                     T1=1
                                     T8=0
                                     T6=T6+1
-                                    print(T6)
+                                    
                                     if T6<=0:
                                     	   raise SystemExit 
                                     	
@@ -536,6 +536,7 @@ class compression:
                                     T1= int(sda10, 2)
                                    
                                     T10=T1
+                                    T40=T1
                                     T12=0
                                     while T5!=1:
 	                                    T2=T1%2
@@ -618,8 +619,8 @@ class compression:
                                     T1=1
                                     T8=0
                                     T6=T6-1
-                                    print(T6)
-                                    if T6<=0 or T6<=128:
+                                    
+                                    if T6<=0:
                                     	   raise SystemExit 
                                     	
                                     
@@ -672,6 +673,160 @@ class compression:
                                      
                                     T7=T7
                                     T7=T7+1
+                                    T30=T7
+                                    
+                                    T3=1
+                                    T4=0
+                                    T5=0
+                                    
+                                    
+                                    
+                                    T1=T7
+                                   
+                                    T10=T1
+                                    T12=0
+                                    while T5!=1:
+	                                    T2=T1%2
+	                                    T3=T1
+	                                    
+	                                    if T2==0:
+	                                        T3=T3//2
+	                                        T1=T3
+	                                        T4=T4+1
+	                                        
+	                                       
+	                                    
+	                                    	
+	                                    else:
+	                                    	T3=(T3*3)+1
+	                                    	T1=T3
+	                                    	T4=T4+1
+	                                    	
+	                                    	
+	                                    	
+	                                    
+	                                    	
+	                                    if T3==1 and T4>=2:
+	                                    	T4=T4
+	                                    	T5=T3
+	                                    	
+	                                    	
+	                                    
+	                                  
+	                               
+                                    T7=1
+                                    T1=1
+                                    T8=0
+                                    T6=T4
+                                    T9=T4
+                                    
+                                    T3=1
+                                    T4=0
+                                    T5=0
+                                    
+                                    while T7!=T10:
+	                                    T2=T1%2
+	                                    T3=T1
+	                                    
+	                                    if T2==0:
+	                                        T3=T3//2
+	                                        T1=T3
+	                                        T4=T4+1
+	                                        
+	                                       
+	                                    
+	                                    	
+	                                    else:
+	                                    	T3=(T3*3)+1
+	                                    	T1=T3
+	                                    	T4=T4+1
+
+	                                    	
+	                                    if T3==1 and T4>=2:
+	                                    	T4=T4
+	                                    	T8=T4
+	                                    	T5=T3
+	                                    	T7=T7+1
+	                                    	T1=T7
+	                                    	T4=0	
+	                                    if T6==T8:
+	                                    	T12=T12+1
+	                                    	T21=T7
+	                                 
+
+                                    
+                                
+                                    
+                                     
+                                    T22=T7-T21
+                                    T24=T22
+                                   
+                                   
+                                    T7=1
+                                    T1=1
+                                    T8=0
+                                    T6=T6+1
+                                    
+                                    if T6<=0:
+                                    	   raise SystemExit 
+                                    	
+                                    
+                                    T9=T4
+                                    
+                                    T3=1
+                                    T4=0
+                                    T5=0
+                                    T14=T12
+                                    
+                                    T12=0
+                                   
+                                    
+                                    
+                                    while T12!=T14:
+	                                    T2=T1%2
+	                                    T3=T1
+	                                    
+	                                    if T2==0:
+	                                        T3=T3//2
+	                                        T1=T3
+	                                        T4=T4+1
+	                                        
+	                                       
+	                                    
+	                                    	
+	                                    else:
+	                                    	T3=(T3*3)+1
+	                                    	T1=T3
+	                                    	T4=T4+1
+
+	                                    	
+	                                    if T3==1 and T4>=2:
+	                                    	T4=T4
+	                                    	T8=T4
+	                                    	T5=T3
+	                                    	T7=T7+1
+	                                    	
+	                                   
+	                                    	T1=T7
+	                                    	T4=0	
+	                                    if T6==T8:
+	                                    	T12=T12+1
+	                                    	T21=T7
+	                                 
+
+                                    
+                                
+                                    
+                                     
+                                    T7=T7
+                                    T7=T7
+                                    
+                                    if T40!=T7:
+                                    	 raise SystemExit
+                                    	
+                                    
+                                    
+                                    
                                     
                                     
                                          
@@ -717,7 +872,7 @@ class compression:
                                             	
                                                	
                                              
-                                            sda30=bin(T7)[2:]
+                                            sda30=bin(T30)[2:]
                                             	
                                             	
                                             lenf=len(sda30)
