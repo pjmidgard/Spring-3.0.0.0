@@ -418,7 +418,7 @@ class compression:
 	                                    	T21=T7
 	                       
                                    
-                                    T7=T7-T24
+                                    T7=T7
                                     
                                     sda17=bin(T7)[2:] 
                    
@@ -655,7 +655,7 @@ class compression:
                                 
                                     
                                      
-                                    T7=T7-T24
+                                    T7=T7
                                     T7=T7+1
                                     
                                     
