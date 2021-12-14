@@ -378,8 +378,8 @@ class compression:
                                     T7=1
                                     T1=1
                                     T8=0
-                                    T6=T6+2
-                                    
+                                    T6=T6+1
+                                    print(T6)
                                     if T6<=0:
                                     	   raise SystemExit 
                                     	
@@ -617,9 +617,9 @@ class compression:
                                     T7=1
                                     T1=1
                                     T8=0
-                                    T6=T6-2
-                                    
-                                    if T6<=0:
+                                    T6=T6-1
+                                    print(T6)
+                                    if T6<=0 or T6<=128:
                                     	   raise SystemExit 
                                     	
                                     
