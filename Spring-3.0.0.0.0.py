@@ -604,6 +604,9 @@ class compression:
                                     T1=1
                                     T8=0
                                     T6=T6-1
+                                    if T6<=0:
+                                    	   raise SystemExit 
+                                    	
                                     
                                     T9=T4
                                     
