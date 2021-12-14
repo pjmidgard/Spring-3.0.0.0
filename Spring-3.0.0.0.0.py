@@ -378,14 +378,21 @@ class compression:
                                     T7=1
                                     T1=1
                                     T8=0
-                                    T6=T6+1
+                                    T6=T6+2
+                                    print(T6)
+                                    if T6<=0:
+                                    	   raise SystemExit 
+                                    	
+                                    
                                     T9=T4
                                     
                                     T3=1
                                     T4=0
                                     T5=0
                                     T14=T12
+                                    
                                     T12=0
+                                   
                                     
                                     
                                     while T12!=T14:
@@ -411,13 +418,20 @@ class compression:
 	                                    	T8=T4
 	                                    	T5=T3
 	                                    	T7=T7+1
+	                                    	
+	                                   
 	                                    	T1=T7
 	                                    	T4=0	
 	                                    if T6==T8:
 	                                    	T12=T12+1
 	                                    	T21=T7
-	                       
-                                   
+	                                 
+
+                                    
+                                
+                                    
+                                     
+                                    T7=T7
                                     T7=T7
                                     
                                     sda17=bin(T7)[2:] 
@@ -603,7 +617,8 @@ class compression:
                                     T7=1
                                     T1=1
                                     T8=0
-                                    T6=T6-1
+                                    T6=T6-2
+                                    print(T6)
                                     if T6<=0:
                                     	   raise SystemExit 
                                     	
