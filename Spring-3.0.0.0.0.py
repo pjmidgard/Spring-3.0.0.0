@@ -182,12 +182,12 @@ class compression:
                                     if lenf7>=(2**40)-1:
                                         raise SystemExit
                                         
-                                    if lenf7<=2:
+                                    if lenf7<=0:
                                         raise SystemExit 
                                 #########################################################################################################################################################
                                 
                                 block2=0
-                                if i==1:
+                                if i==2:
 
                                     lenf5=len(sda2)
 
@@ -288,307 +288,9 @@ class compression:
                                     ei=0
                                     T14=0
                                     
-                                    
-                                    sda32=sda2[ei:ei+8]
-                                    T22 = int(sda32, 2)
-                                    Ssize=len(sda32)
-                                   
-                                    if Ssize==0:
-                                    	raise SystemExit
-
-                                    
-                                    
-                                    	
-                                    	
-                                    T16=sda2[8:Times+8]
-                               
-                                    
-                                    	
-                                    T16="1"+T16
-                                    
-                                    Ssize=len(T16)
-                                   
-                                    if Ssize==0:
-                                    		raise SystemExit
-                   
-                                    
-                                    T12 = int(T16, 2)
-                                    sda2=sda2[Times+8:]
-                                    
-                                    sda10=sda2
-                                    Ssize=len(sda10)
-                                   
-                                    if Ssize==0:
-                                                     
-                                         sda17="01111111"+sda3
-                                         #print(sda17)
-                                       
-                                         n = int(sda17, 2)
-                                         qqwslenf=len(sda17)
-                                         qqwslenf=(qqwslenf//8)*2
-                                         qqwslenf=str(qqwslenf)
-                                         qqwslenf="%0"+qqwslenf+"x"
-                                         jl=binascii.unhexlify(qqwslenf % n)
-                                         sssssw=len(jl)
-
-                                         szxzzza=""
-                                         szxzs=""
-                                            
-                                         f2.write(jl)
-                                         x2 = time()
-                                         x3=x2-x
-                                         return print(x3)
-                                   
-                                   
-                                    T6 = int(sda10, 2)
-                                    if T6==0:
-                                        	raise SystemExit
-                                           
-                                    
-                                    T7=1
-                                    T1=1
-                                    T8=0
-                                  
-                                    
-                                    
                                     T3=1
                                     T4=0
                                     T5=0
-                                    
-                                    T15=0
-                                    
-                                    while T15!=T12:
-	                                    T2=T1%2
-	                                    T3=T1
-	                                    
-	                                    if T2==0:
-	                                        T3=T3//2
-	                                        T1=T3
-	                                        T4=T4+1
-	                                        
-	                                       
-	                                    
-	                                    	
-	                                    else:
-	                                    	T3=(T3*3)+1
-	                                    	T1=T3
-	                                    	T4=T4+1
-
-	                                    	
-	                                    if T3==1 and T4>=2:
-	                                    	T4=T4
-	                                    	T8=T4
-	                                    	T5=T3
-	                                    	T7=T7+1
-	                                    	T1=T7
-	                                    	T3=T7
-	                                    	T4=0	
-	                                    if T6==T8:
-	                                    	T15=T15+1
-	                                    
-	                                	
-                                    
-                                    T23=T22+T7
-                                    
-                                    T27=T23
-                                    
-                                    T3=1
-                                    T4=0
-                                    T5=0
-                                    
-                                    
-                                    T1=T23
-                                    
-                                    T10=T1
-                                    T12=0
-                                    while T5!=1:
-	                                    T2=T1%2
-	                                    T3=T1
-	                                    
-	                                    if T2==0:
-	                                        T3=T3//2
-	                                        T1=T3
-	                                        T4=T4+1
-	                                        
-	                                       
-	                                    
-	                                    	
-	                                    else:
-	                                    	T3=(T3*3)+1
-	                                    	T1=T3
-	                                    	T4=T4+1
-	                                    	
-	                                    	
-	                                    	
-	                                    
-	                                    	
-	                                    if T3==1 and T4>=2:
-	                                    	T4=T4
-	                                    	T5=T3
-                                    
-                                    
-                  
-	                                    	
-	                                              
-                                    T7=1
-                                    T1=1
-                                    T8=0
-                                    T11=T6
-                                    T6=T4
-                                    
-                                    T9=T4
-                                    
-                                    T3=1
-                                    T4=0
-                                    T5=0
-                                    
-                                    while T7!=T10:
-	                                    T2=T1%2
-	                                    T3=T1
-	                                    
-	                                    if T2==0:
-	                                        T3=T3//2
-	                                        T1=T3
-	                                        T4=T4+1
-	                                        
-	                                       
-	                                    
-	                                    	
-	                                    else:
-	                                    	T3=(T3*3)+1
-	                                    	T1=T3
-	                                    	T4=T4+1
-
-	                                    	
-	                                    if T3==1 and T4>=2:
-	                                    	T4=T4
-	                                    	T8=T4
-	                                    	T5=T3
-	                                    	T7=T7+1
-	                                    	T1=T7
-	                                    	T3=T7
-	                                    	T4=0	
-	                                    if T6==T8:
-	                                    	T12=T12+1
-	                                    	T21=T7
-	                                 
-
-                                    
-                                
-                                    
-                                     
-                                    T24=T7-T21
-                                    T33=T24-T22
-                                   
-                                    
-                                    
-                                   
-                                    
-                                    
-                                    if T12==T15 and T33==0 and T6==T11:
-                                    	sda17=bin(T27)[2:] 
-                                    else:
-                                    	raise SystemExit
-                                    	
-                                   
-                                   
-                                   
-                                  
-                                    
-                                    	
-
-                                    lenf=len(sda17)
-                                            
-                                    szx=""
-                                    xc=8-lenf%8
-                                    z=0
-                                    if xc!=0:
-                                        if xc!=8:
-                                                while z<xc:
-                                                        szx="0"+szx
-                                                        z=z+1
-
-                                    lenf=len(sda17)
-                                    B3=""
-
-                                                                                      
-
-                                   
-                                    sda17=szx+sda17
-                                    
-     
-                                         
-                                    sda2=sda17
-                                    Circle_times2=Circle_times2+1
-                                    
-                                    
-                                    if   Circle_times2==1:
-                                    		L=len(sda17)
-                                    		n = int(sda17, 2)
-                                    		qqwslenf=len(sda17)
-                                    		qqwslenf=(qqwslenf//8)*2
-                                    		qqwslenf=str(qqwslenf)
-                                    		qqwslenf="%0"+qqwslenf+"x"
-                                    		jl=binascii.unhexlify(qqwslenf % n)
-                                    		sssssw=len(jl)
-                                    		szxzzza=""
-                                    		szxzs=""
-                                    		sda2=sda6
-                                    		f2.write(jl)
-                                    		x2 = time()
-                                    		x3=x2-x
-                                    		xs=float(x3)
-                                    		return print(x3)
-                                    		
-                                    	
-                                    	
-                                   
-                                                     
-                                                     
-                  
-                                        
-                                if i==2:
-
-                                    sda17=""
-                                    sda19=""
-                                    
-                                    sda3=sda2
-                                    Spin=0
-                                    lenf6=len(sda3)
-                                    ei4=0
-                                    ei5=20
-                                    block3=0
-                                    Colaider3=""
-                                    block2=0
-                                    block3=0
-
-                                    szx=""
-
-                                    sda6=""
-
-                                    #Compression
-
-                                    sda9=""
-
-                                    sda10=""
-                                    sda11=""
-                                    sda12=""
-                                    sda13=""
-
-                                    ei=0
- 
-                                    lenf6F=lenf6
-
-                                    ei=0
-                                    Spin=0
-                                  
-                                    T3=1
-                                    T4=0
-                                    T5=0
-                                    
-                                    
-                                  
-
                                     
                                     sda10=sda3
                                     
@@ -657,10 +359,8 @@ class compression:
 	                                    	T4=T4
 	                                    	T8=T4
 	                                    	T5=T3
-	                                    	
 	                                    	T7=T7+1
 	                                    	T1=T7
-	                                    	T3=T7
 	                                    	T4=0	
 	                                    if T6==T8:
 	                                    	T12=T12+1
@@ -672,9 +372,291 @@ class compression:
                                     
                                      
                                     T22=T7-T21
-                                    cc=0
-                                    if T22>255:
-                                           cc=1
+                                    T24=T22
+                                   
+                                   
+                                    T7=1
+                                    T1=1
+                                    T8=0
+                                    T6=T6+1
+                                    T9=T4
+                                    
+                                    T3=1
+                                    T4=0
+                                    T5=0
+                                    T14=T12
+                                    T12=0
+                                    
+                                    
+                                    while T12!=T14:
+	                                    T2=T1%2
+	                                    T3=T1
+	                                    
+	                                    if T2==0:
+	                                        T3=T3//2
+	                                        T1=T3
+	                                        T4=T4+1
+	                                        
+	                                       
+	                                    
+	                                    	
+	                                    else:
+	                                    	T3=(T3*3)+1
+	                                    	T1=T3
+	                                    	T4=T4+1
+
+	                                    	
+	                                    if T3==1 and T4>=2:
+	                                    	T4=T4
+	                                    	T8=T4
+	                                    	T5=T3
+	                                    	T7=T7+1
+	                                    	T1=T7
+	                                    	T4=0	
+	                                    if T6==T8:
+	                                    	T12=T12+1
+	                                    	T21=T7
+	                       
+                                   
+                                    T7=T7-T24
+                                    
+                                    sda17=bin(T7)[2:] 
+                   
+
+                                    lenf=len(sda17)
+                                            
+                                    szx=""
+                                    xc=8-lenf%8
+                                    z=0
+                                    if xc!=0:
+                                        if xc!=8:
+                                                while z<xc:
+                                                        szx="0"+szx
+                                                        z=z+1
+
+                                    lenf=len(sda17)
+                                    B3=""
+
+                                                                                      
+
+                                   
+                                    sda17=szx+sda17
+                                    
+     
+                                         
+                                    sda2=sda17
+                                    Circle_times2=Circle_times2+1
+                                    
+                                    
+                                    if   Circle_times2==1:
+                                    		L=len(sda17)
+                                    		n = int(sda17, 2)
+                                    		qqwslenf=len(sda17)
+                                    		qqwslenf=(qqwslenf//8)*2
+                                    		qqwslenf=str(qqwslenf)
+                                    		qqwslenf="%0"+qqwslenf+"x"
+                                    		jl=binascii.unhexlify(qqwslenf % n)
+                                    		sssssw=len(jl)
+                                    		szxzzza=""
+                                    		szxzs=""
+                                    		sda2=sda6
+                                    		f2.write(jl)
+                                    		x2 = time()
+                                    		x3=x2-x
+                                    		xs=float(x3)
+                                    		return print(x3)
+                                    		
+                                    	
+                                    	
+                                   
+                                                     
+                                                     
+                  
+                                        
+                                if i==1:
+
+                                    sda17=""
+                                    sda19=""
+                                    
+                                    sda3=sda2
+                                    Spin=0
+                                    lenf6=len(sda3)
+                                    ei4=0
+                                    ei5=20
+                                    block3=0
+                                    Colaider3=""
+                                    block2=0
+                                    block3=0
+
+                                    szx=""
+
+                                    sda6=""
+
+                                    #Compression
+
+                                    sda9=""
+
+                                    sda10=""
+                                    sda11=""
+                                    sda12=""
+                                    sda13=""
+
+                                    ei=0
+ 
+                                    lenf6F=lenf6
+
+                                    ei=0
+                                    Spin=0
+                                  
+                                    T3=1
+                                    T4=0
+                                    T5=0
+                                    
+                                    
+                                  
+
+                                    if sda3[0:8]=="00000000":
+                                    	raise SystemExit
+                                    sda10=sda3
+                                    
+                                    T1= int(sda10, 2)
+                                   
+                                    T10=T1
+                                    T12=0
+                                    while T5!=1:
+	                                    T2=T1%2
+	                                    T3=T1
+	                                    
+	                                    if T2==0:
+	                                        T3=T3//2
+	                                        T1=T3
+	                                        T4=T4+1
+	                                        
+	                                       
+	                                    
+	                                    	
+	                                    else:
+	                                    	T3=(T3*3)+1
+	                                    	T1=T3
+	                                    	T4=T4+1
+	                                    	
+	                                    	
+	                                    	
+	                                    
+	                                    	
+	                                    if T3==1 and T4>=2:
+	                                    	T4=T4
+	                                    	T5=T3
+	                                    	
+	                                    	
+	                                    
+	                                  
+	                               
+                                    T7=1
+                                    T1=1
+                                    T8=0
+                                    T6=T4
+                                    T9=T4
+                                    
+                                    T3=1
+                                    T4=0
+                                    T5=0
+                                    
+                                    while T7!=T10:
+	                                    T2=T1%2
+	                                    T3=T1
+	                                    
+	                                    if T2==0:
+	                                        T3=T3//2
+	                                        T1=T3
+	                                        T4=T4+1
+	                                        
+	                                       
+	                                    
+	                                    	
+	                                    else:
+	                                    	T3=(T3*3)+1
+	                                    	T1=T3
+	                                    	T4=T4+1
+
+	                                    	
+	                                    if T3==1 and T4>=2:
+	                                    	T4=T4
+	                                    	T8=T4
+	                                    	T5=T3
+	                                    	T7=T7+1
+	                                    	T1=T7
+	                                    	T4=0	
+	                                    if T6==T8:
+	                                    	T12=T12+1
+	                                    	T21=T7
+	                                 
+
+                                    
+                                
+                                    
+                                     
+                                    T22=T7-T21
+                                    T24=T22
+                                   
+                                   
+                                    T7=1
+                                    T1=1
+                                    T8=0
+                                    T6=T6-1
+                                    
+                                    T9=T4
+                                    
+                                    T3=1
+                                    T4=0
+                                    T5=0
+                                    T14=T12
+                                    
+                                    T12=0
+                                   
+                                    
+                                    
+                                    while T12!=T14:
+	                                    T2=T1%2
+	                                    T3=T1
+	                                    
+	                                    if T2==0:
+	                                        T3=T3//2
+	                                        T1=T3
+	                                        T4=T4+1
+	                                        
+	                                       
+	                                    
+	                                    	
+	                                    else:
+	                                    	T3=(T3*3)+1
+	                                    	T1=T3
+	                                    	T4=T4+1
+
+	                                    	
+	                                    if T3==1 and T4>=2:
+	                                    	T4=T4
+	                                    	T8=T4
+	                                    	T5=T3
+	                                    	T7=T7+1
+	                                    	
+	                                   
+	                                    	T1=T7
+	                                    	T4=0	
+	                                    if T6==T8:
+	                                    	T12=T12+1
+	                                    	T21=T7
+	                                 
+
+                                    
+                                
+                                    
+                                     
+                                    T7=T7-T24
+                                    T7=T7+1
+                                    
+                                    
+                                         
                                            
                                           
                                     sda6=sda4
@@ -696,7 +678,7 @@ class compression:
                                     sda2=sda17
                                    
 
-                                    if i==2:
+                                    if i==1:
                                         wer=""
                                         wer=sda6
                                         sda4=""
@@ -709,81 +691,28 @@ class compression:
                                         
                                         
                                         if  Circle_times2==1:
-                                            #print(lenf6-1)
-                                            if T7!=T10:
-                                            	raise SystemExit
-
-                                            if T7==T10:
-                                            	sda33=bin(T9)[2:]
-                                            	sda18=bin(T12)[3:]
-                                            	sda30=bin(T22)[2:]
                                             	
-                                            	
-                                            	lenf=len(sda30)
-                                            	szx4=""
-                                            	xc=8-lenf%8
-                                            	z=0
-                                            	if xc!=0:
-                                            	        if xc!=8:
-                                            	            while z<xc:
-                                            	            	szx4="0"+szx4
-                                            	            	z=z+1
                                             
                                                
                                             
                                             		
-                                            	lenf=len(sda18)
-                                            	szx=""
-                                            	xc=8-lenf%8
-                                            	z=0
-                                            	if xc!=0:
-                                            	        if xc!=8:
-                                            	            while z<xc:
-                                            	            	szx="0"+szx
-                                            	            	z=z+1
+                                            	
                                                	
-                                            	sda31=szx4+sda30       	
-                                            	sda19=szx+sda18
+                                             
+                                            sda30=bin(T7)[2:]
                                             	
-                                            			
-                                            	lenf=len(sda33)
-                                            	szx5=""
-                                            	xc=8-lenf%8
-                                            	z=0
-                                            	if xc!=0:
-                                            	        if xc!=8:
-                                            	            while z<xc:
-                                            	            	szx5="0"+szx5
-                                            	            	z=z+1
-                                            	sda32=szx5+sda33
-                                                
-                                            	sda17=sda31+sda19+sda32
-                                           
-                                            
-       
-                                           
                                             	
-                                            
-                                            lenf=len(sda17)
-                                            
-                                            szx=""
+                                            lenf=len(sda30)
+                                            szx4=""
                                             xc=8-lenf%8
                                             z=0
                                             if xc!=0:
-                                                if xc!=8:
-                                                    while z<xc:
-                                                        szx="0"+szx
-                                                        z=z+1
-
-                                            lenf=len(sda17)
-                                            B3=""
-
-                                                                                      
-
-                                            sda17=szx+sda17
-                                            L=len(sda17)
-                                            if cc==1:
-                                            	raise SystemExit
+                                            	        if xc!=8:
+                                            	            while z<xc:
+                                            	            	szx4="0"+szx4
+                                            	            	z=z+1 	
+                                            sda17=szx4+sda30 
+                                            	
                                             n = int(sda17, 2)
                                             qqwslenf=len(sda17)
                                             qqwslenf=(qqwslenf//8)*2
